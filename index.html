@@ -2,9 +2,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Web Sơn</title>
 	<link rel="icon" href="./img/favio/icon.png" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./reponsive.css">
 	<link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -17,7 +19,7 @@
 				<li><a href="#tour">Tour</a></li>
 				<li><a href="#contact">Contact</a></li>
 				<li>
-					<a href="">
+					<a href="#">
 						More
 					<i class="nav-arrow-down ti-angle-down"></i>
 					</a>
@@ -35,6 +37,13 @@
 			<div class="search-btn" >
 				<a href="facebook.com"><i class="search-icon ti-search" ></i></a>
 			</div>
+
+			<!-- mobile-mebu-btn -->
+			<div id="mobile-menu" class="mobile-menu-btn">
+				<i class="menu-icon ti-menu"></i>
+			</div>
+
+
 			<!-- end :search button -->
 		</div>
 
@@ -55,17 +64,17 @@
 				</p>
 
 				<div class="row member-list">
-					<div class="col col-third text-center">
+					<div class="col col-third s-col-full mt-32 text-center">
 						<p class="member-name">Đặng Thạch Sơn</p>
 							<img src="./img/member/member1.jpg" alt="Name" class="member-img">
 					</div>
 
-					<div class="col col-third text-center">
+					<div class="col col-third s-col-full mt-32 text-center">
 						<p class="member-name">Đặng Thạch Sơn</p>
 							<img src="./img/member/member4.jpg" alt="Name" class="member-img">
 					</div>
 
-					<div class="col col-third text-center">
+					<div class="col col-third s-col-full mt-32 text-center">
 						<p class="member-name">Đặng Thạch Sơn</p>
 							<img src="./img/member/member5.jpg" alt="Name" class="member-img">
 					</div>
@@ -87,34 +96,34 @@
 
 					<!-- place -->
 					<div class="row places-list">
-						<div class="col col-third">
+						<div class="col col-third s-col-full mt-16">
 							<img src="./img/places/place1.jpg" alt="New York" class="place-img">
 							<div class="place-body">
 								<h3 class="place-heading">New York</h3>
 								<p class="place-time">Fri 27 Nov 2016</p>
 								<p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-								<a href="" class="btn">Buy Tickets</a>
+								<a href="" class="btn s-witdh-full">Buy Tickets</a>
 							</div>
 						</div>
 
 
-						<div class="col col-third">
+						<div class="col col-third s-col-full mt-16">
 							<img src="./img/places/place2.jpg" alt="New York" class="place-img">
 							<div class="place-body">
 								<h3 class="place-heading">Paris</h3>
 								<p class="place-time">Sat 28 Nov 2016</p>
 								<p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-								<a href="" class="btn">Buy Tickets</a>
+								<a href="" class="btn s-witdh-full">Buy Tickets</a>
 							</div>
 						</div>
 
-						<div class="col col-third">
+						<div class="col col-third s-col-full mt-16">
 							<img src="./img/places/place3.jpg" alt="New York" class="place-img">
 							<div class="place-body">
 								<h3 class="place-heading">San Francisco</h3>
 								<p class="place-time">Sun 29 Nov 2016</p>
 								<p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-								<a href="" class="btn">Buy Tickets</a>
+								<a href="" class="btn s-witdh-full">Buy Tickets</a>
 							</div>	
 						</div>
 							
@@ -130,18 +139,18 @@
 				<p class="section-sub-heading">Fan? Drop a note!</p>
 
 				<div class="row contact-content">
-					<div class="col col-half contact-info">
+					<div class="col col-half s-col-full contact-info">
 						<p><i class="ti-location-pin"></i>Việt Nam, Ha Nội</p>
-						<p><i class="ti-mobile"></i>Phone:0347246199</p>
-						<p><i class="ti-email"></i>Email:Sondang2kk@gamil.com</p>
+						<p><i class="ti-mobile"></i>Phone:<a href="tel:0347246199">0347246199</a> </p>
+						<p><i class="ti-email"></i>Email:<a href="mailto:sondang2kk@gmail.com">Sondang2kk@gmail.com</a> </p>
 					</div>
-					<div class="col col-half contact-form">
+					<div class="col col-half s-col-full contact-form">
 						<form action="">
 							<div class="row">
-								<div class="col col-half ">
+								<div class="col col-half s-col-full s-mt-8 ">
 									<input type="text" nam="" placeholder="Name" required class="form-control">
 								</div>
-								<div class="col col-half ">
+								<div class="col col-half s-col-full s-mt-8 ">
 									<input type="Email" name="" placeholder="Email" required class="form-control">
 								</div>
 								
@@ -152,7 +161,7 @@
 								</div>
 
 							</div>
-							<input class="btn pull-right mt-16 " type="submit" value="SEND"  >
+							<input class="btn pull-right mt-16 s-witdh-full contact-submit-btn" type="submit" value="SEND"  >
 							
 						</form>
 
@@ -184,5 +193,61 @@
 		</div>
 		
 	</div>
+	<script>
+		var header=document.getElementById('header');
+		var mobileMenu=document.getElementById('mobile-menu');
+		var headerHeight=header.clientHeight;
+
+		// đóng mở mobile menu
+		mobileMenu.onclick=function(){
+			var isClose=header.clientHeight===headerHeight;
+			if(isClose){
+				header.style.height='auto';
+
+			}else{
+				header.style.height=null;
+			}
+
+		}
+
+		// Khai báo biến header/ mobile/ headerHeight
+        // Đóng/ Mở mobile menu
+        // Khi click vào mobileMenu thì sẽ chạy hàm như sau: 
+            // Khai báo biến isclosed = header.clientHeight bằng với headerHeight (biến True False);
+            // Nếu biến isClosed đúng thì header.style.height ='auto' --> sổ ra 
+            // Nếu biến isClosed sai thì header.style.height = null --> đóng vào 
+
+        // Tự động đóng khi chọn menu\
+		//   tự động đóng khi chọn menu
+
+		var menuItems=document.querySelectorAll('#nav li a[href*="#"]');
+		// console.log(menuItems)
+		for (var i=0 ; i<menuItems.length;i++){
+			var menuItem=menuItems[i];
+			
+			menuItem.onclick=function(event){
+				var isParenMenu=this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+				if(isParenMenu){
+					event.preventDefault();
+				}else{
+					header.style.height=null;
+
+				}
+			}
+			
+			
+		}
+		
+		 //Khai báo biến menuItems là các thẻ nav li a có chứa dấu #
+        // Chạy vòng lặp for (khai báo biến i=0; nếu i nhỏ hơn số lượng MenuItems; tăng i lên 1) Nếu i thỏa mãn chạy: 
+        // Khai báo biến tạm menuItem = truyền giá trị của menuItems vị trí i vào;
+        // Khi click vào menuItem chạy hàm 
+        //header.style.height =null; --> giấu thanh đi 
+
+		//this được hiểu là chính nó
+		// nextElementSibling: anh em liền kề của nó
+
+	</script>
+	
 </body>
 </html>

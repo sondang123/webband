@@ -37,6 +37,10 @@ html {
 .mt-16{
     margin-top: 16px !important;
 }
+.mt-32{
+    margin-top: 32px !important;
+
+}
 .pull-right{
     float:right !important;
 }
@@ -74,6 +78,9 @@ html {
     padding: 11px 16px;
     display: inline-block;
     border: none;
+    text-align: center;
+    margin-top: 15px;
+    -webkit-appearance: none;
 }
 .btn:hover{
     color: #000;
@@ -89,8 +96,7 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
-    
-    
+   
 }
 
 #nav{
@@ -123,6 +129,7 @@ html {
     display: none;
     position: absolute;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background-color:#ccc ;
     min-width: 160px;
     top:100%;
     left:0;
@@ -130,7 +137,7 @@ html {
 }
 #nav .subnav a {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    background-color:#ccc ;
+   
     color: black;
     line-height: 38px;
     /* padding: 0 50px; */
@@ -147,23 +154,40 @@ html {
 #nav .nav-arrow-down{
     font-size:14px;
 }
+#header .mobile-menu-btn{
+    position:absolute;
+    top:0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn{
-    float: right;
-    line-height: 46px;
-    padding: 0 21px;
-    cursor: pointer;
-    
+    float: right;    
+    padding: 0 21px;   
 }
 .search-btn a{
     text-decoration: none;
 }
+
 #header .search-btn:hover{
+    cursor: pointer;
     background-color:#f44336 ;
 
 }
+#header .mobile-menu-btn:hover{
+    cursor: pointer;
+    background-color:#ccc ;
+}
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000 ;
+}
+
+#header .menu-icon,
 #header .search-icon{
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
+    line-height: 46px;
   
 }
 #slider {
@@ -223,7 +247,7 @@ html {
     line-height: 1.6;
 }
 #content .member-list{
-    padding-top: 48px;
+    margin-top: 32px;
     
 
 }
@@ -274,7 +298,7 @@ html {
 }
 /* place */
 .places-list{
-    margin-top: 32px;
+    margin-top: 16px;
     
 }
 
@@ -316,6 +340,14 @@ html {
 /* .contact-info i[class*="ti-"]{
 
 } */
+.contact-info a{
+    color: rgb(6, 44, 216);
+    opacity: 0.8;
+}
+.contact-info a:hover{    
+    opacity: 1;
+}
+
 .contact-info i{
     width: 30px;
     display: inline-block;
