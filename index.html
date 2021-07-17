@@ -148,16 +148,16 @@
 						<form action="">
 							<div class="row">
 								<div class="col col-half s-col-full s-mt-8 ">
-									<input type="text" nam="" placeholder="Name" required class="form-control">
+									<input type="text" nam="" placeholder="Name" required id="contact-name"class="form-control">
 								</div>
 								<div class="col col-half s-col-full s-mt-8 ">
-									<input type="Email" name="" placeholder="Email" required class="form-control">
+									<input type="Email" name="" placeholder="Email" required id="contact-email" class="form-control">
 								</div>
 								
 							</div>
 							<div class="row mt-8">
 								<div class="col col-full ">
-									<input type="text" name="" placeholder="Message" required class="form-control">
+									<input type="text" name="" placeholder="Message" required id="contact-message"class="form-control">
 								</div>
 
 							</div>
@@ -192,6 +192,38 @@
 
 		</div>
 		
+	</div>
+	<div class="modal modal-open">
+		<div class="modal-container">
+			<div class="modal-close">
+				Close <i class="modal-icon-close ti-close"></i>
+			</div>
+			<header class="modal-header">
+				<i class="modal-header-icon ti-bag"></i>
+				Tickets
+			</header>
+			<div class="modal-body">
+				<label for="tickets-quantity" class="modal-label">
+					<i class="ti-shopping-cart"></i>
+					Tickets,$15 per person
+				</label>
+				<input id="tickets-quantity" required type="text" class="modal-input" placeholder="How many ?">
+
+
+				<label for="tickets-email" class="modal-label">
+					<i class="ti-user"></i>
+					Send to
+				</label>
+				<input id="tickets-email" required type="email" class="modal-input" placeholder="Enter email... ?">
+
+				<button id="buy-tickets">
+					Pay <i class="ti-check"></i>
+				</button>
+			</div>
+			<footer class="modal-footer">
+				<p class="modal-help">Need <a href="">help?</a></p>
+			</footer>
+		</div>
 	</div>
 	<script>
 		var header=document.getElementById('header');
@@ -246,6 +278,7 @@
 
 		//this được hiểu là chính nó
 		// nextElementSibling: anh em liền kề của nó
+	
 
 	</script>
 	
