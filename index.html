@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<link rel="stylesheet" type="text/css" href="./reponsive.css">
 	<link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
+	<!-- <script src="./javascrip.js"></script> -->
 </head>
 <body>
 	<div id="main">
@@ -51,6 +52,10 @@
 			<div class="text-content">
 				<h2 class="text-heading">New York</h2>
 				<p class="text-description">The atmosphere in New York is Lorem ipsum</p>
+				<div class="slider__btn">
+					<button class="btn-slider">Đăng Kí </button>
+					<button class="btn-slider">Đăng Nhập</button>
+				</div>
 			</div>
 		
 		</div>
@@ -64,21 +69,25 @@
 				</p>
 
 				<div class="row member-list">
-					<div class="col col-third s-col-full mt-32 text-center">
-						<p class="member-name">Đặng Thạch Sơn</p>
+					<div class="load-item">
+						<div class="col col-third s-col-full mt-32 text-center">
+							<p class="member-name">Đặng Thạch Sơn</p>
 							<img src="./img/member/member1.jpg" alt="Name" class="member-img">
+						</div>
 					</div>
-
-					<div class="col col-third s-col-full mt-32 text-center">
-						<p class="member-name">Đặng Thạch Sơn</p>
+					<div class="load-item">
+						<div class="col col-third s-col-full mt-32 text-center">
+							<p class="member-name">Đặng Thạch Sơn</p>
 							<img src="./img/member/member4.jpg" alt="Name" class="member-img">
+						</div>
 					</div>
-
-					<div class="col col-third s-col-full mt-32 text-center">
-						<p class="member-name">Đặng Thạch Sơn</p>
+					<div class="load-item">
+						<div class="col col-third s-col-full mt-32 text-center">
+							<p class="member-name">Đặng Thạch Sơn</p>
 							<img src="./img/member/member5.jpg" alt="Name" class="member-img">
+						</div>
+
 					</div>
-					
 				</div>
 
 			</div>
@@ -96,35 +105,42 @@
 
 					<!-- place -->
 					<div class="row places-list">
-						<div class="col col-third s-col-full mt-16">
-							<img src="./img/places/place1.jpg" alt="New York" class="place-img">
-							<div class="place-body">
-								<h3 class="place-heading">New York</h3>
-								<p class="place-time">Fri 27 Nov 2016</p>
-								<p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-								<button class="btn s-witdh-full js-buy-ticket">Buy Tickets</button>
+						<div class="load-item">
+							<div class="col col-third s-col-full mt-16 ">
+								<img src="./img/places/place1.jpg" alt="New York" class="place-img">
+								<div class="place-body">
+									<h3 class="place-heading">New York</h3>
+									<p class="place-time">Fri 27 Nov 2016</p>
+									<p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+									<button class="btn s-witdh-full js-buy-ticket">Buy Tickets</button>
+								</div>
 							</div>
+
 						</div>
 
-
-						<div class="col col-third s-col-full mt-16">
-							<img src="./img/places/place2.jpg" alt="New York" class="place-img">
-							<div class="place-body">
-								<h3 class="place-heading">Paris</h3>
-								<p class="place-time">Sat 28 Nov 2016</p>
-								<p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-								<button class="btn s-witdh-full js-buy-ticket">Buy Tickets</button>
+						<div class="load-item">
+							<div class="col col-third s-col-full mt-16">
+								<img src="./img/places/place2.jpg" alt="New York" class="place-img">
+								<div class="place-body">
+									<h3 class="place-heading">Paris</h3>
+									<p class="place-time">Sat 28 Nov 2016</p>
+									<p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+									<button class="btn s-witdh-full js-buy-ticket">Buy Tickets</button>
+								</div>
 							</div>
-						</div>
 
-						<div class="col col-third s-col-full mt-16">
-							<img src="./img/places/place3.jpg" alt="New York" class="place-img">
-							<div class="place-body">
-								<h3 class="place-heading">San Francisco</h3>
-								<p class="place-time">Sun 29 Nov 2016</p>
-								<p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-								<button class="btn s-witdh-full js-buy-ticket">Buy Tickets</button>
-							</div>	
+						</div>
+						<div class="load-item">
+							<div class="col col-third s-col-full mt-16">
+								<img src="./img/places/place3.jpg" alt="New York" class="place-img">
+								<div class="place-body">
+									<h3 class="place-heading">San Francisco</h3>
+									<p class="place-time">Sun 29 Nov 2016</p>
+									<p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+									<button class="btn s-witdh-full js-buy-ticket">Buy Tickets</button>
+								</div>	
+							</div>
+
 						</div>
 							
 					</div>
@@ -225,6 +241,16 @@
 			</footer>
 		</div>
 	</div>
+	<div class="backtop-btn">
+		<button onclick="topFunction()"  id="backToTop"  class="backtop-btn-icon top-btn">
+			<ti class="ti-arrow-circle-up"></ti>
+		</button>
+		<button id="backtoHome" class="backtop-btn-icon message-btn">
+			<i class="ti-home"></i>
+			<!-- <img src="./img/backtop/zalo.png" alt=""> -->
+		</button>
+	</div>
+	
 	<script>
 		var header=document.getElementById('header');
 		var mobileMenu=document.getElementById('mobile-menu');
@@ -319,6 +345,27 @@
 		})
 		
 	</script>
-	
+
+	<!-- back to top -->
+	<script>
+		const backTopBtn=document.getElementById('backToTop');
+		
+		window.onscroll=function(){
+			scrollFunction()
+		}
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				backTopBtn.style.display = "block";
+			} else {
+				backTopBtn.style.display = "none";
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+
+	</script>
+	<script src="./javascript.js"></script>	
 </body>
 </html>

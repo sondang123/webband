@@ -1,5 +1,8 @@
 @media (min-width: 1024px){
-    
+    #slider .text-content{
+        bottom: 50%;
+        
+    }
 
 }
 /* tablet and mobile */
@@ -79,6 +82,10 @@
        padding: 5px 50px;
        box-shadow: 0 0 10px rgba(172, 172, 172, 0.3);
        
+    }
+    .slider__btn .btn-slider{
+        font-size: 11px;
+
     }
     
     #content .member-img{
